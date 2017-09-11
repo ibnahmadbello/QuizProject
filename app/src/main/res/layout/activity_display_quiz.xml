@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.practice.ayrash.quizproject.DisplayQuizActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:fontFamily="monospace"
+        android:textSize="28sp"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. Which of the following is the recent programming language officially adopted by Google during I/O 17 for Android OS?"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="4dp"/>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Java"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Python"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Golang"/>
+        <RadioButton
+            android:id="@+id/Q1_CorrectOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kotlin"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Erlang"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2. Select the Open Source Operating System from the following:"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginLeft="4dp"/>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp">
+        <CheckBox
+            android:id="@+id/Q2_CorrectOption1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ubuntu"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Arch Linux"
+            android:id="@+id/Q2_CorrectOption2"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Windows"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cent OS"
+            android:id="@+id/Q2_CorrectOption3"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gentoo OS"
+            android:id="@+id/Q2_CorrectOption4"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fedora"
+            android:id="@+id/Q2_CorrectOption5"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3. Which of the following is a propriety source Operating System?"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginLeft="4dp"/>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Linux"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unix"/>
+        <RadioButton
+            android:id="@+id/Q3_CorrectOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Windows"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sun - Solaris"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4. Andela is a tech firm active in Africa; Name the two African country where they are active."
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginLeft="4dp"/>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp">
+
+        <EditText
+            android:id="@+id/type_your_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Type Your Answer here"
+            android:inputType="textCapCharacters"
+            />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5. The founder of Facebook visited Nigeria in what year?"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginLeft="4dp"/>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp">
+        <RadioButton
+            android:id="@+id/Q5_CorrectOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2017"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2015"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2013"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2014"/>
+    </RadioGroup>
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="6. After Nigeria, the founder of Facebook visited which African country?"
+    android:textSize="16sp"
+    android:fontFamily="sans-serif-condensed"
+    android:layout_marginLeft="4dp"/>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Uganda"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="South Africa"/>
+        <RadioButton
+            android:id="@+id/Q6_CorrectOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kenya"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Egypt"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tanzania"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7. Which of the following Operating System power most of the smart device available in the world today?"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginLeft="4dp"/>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp">
+        <RadioButton
+            android:id="@+id/Q7_CorrectOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Macintosh"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ubuntu"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Windows"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="iOS"/>
+    </RadioGroup>
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="8. The most popular desktop Operating System is owned by which company?"
+    android:textSize="16sp"
+    android:fontFamily="sans-serif-condensed"
+    android:layout_marginLeft="4dp"/>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apple"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Andela"/>
+        <RadioButton
+            android:id="@+id/Q8_CorrectOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Microsoft"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Canonical"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tesla"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9. Select the device which uses IoT from the following:"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginLeft="4dp"/>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp">
+        <CheckBox
+            android:id="@+id/Q9_CorrectOption1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Smart Watch"/>
+        <CheckBox
+            android:id="@+id/Q9_CorrectOption2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Self Driving Car"/>
+        <CheckBox
+            android:id="@+id/Q9_CorrectOption3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Smart Fridge"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mouse"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10. Which of the following is known to have lots of framework?"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginLeft="4dp"/>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp">
+        <RadioButton
+            android:id="@+id/Q10_CorrectOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JavaScript"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Java"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PhP"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Python"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ruby"/>
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit Quiz"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:onClick="submitQuiz"
+        />
+</LinearLayout>
+</ScrollView>
