@@ -17,11 +17,13 @@ import static android.R.attr.checked;
 public class DisplayQuizActivity extends AppCompatActivity {
 
     int totalScore = 0;
+    TextView textView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display_quiz);
 
+        textView = (TextView) findViewById(R.id.timer);
         Intent intent = getIntent();
         startTicking();
     }
@@ -65,7 +67,6 @@ public class DisplayQuizActivity extends AppCompatActivity {
 
     public void startTicking(){
         new CountDownTimer(30000, 1000){
-            TextView textView = (TextView) findViewById(R.id.timer);
             public void onTick(long millisUntilFinished){
                 textView.setText("Seconds Remaining: " + millisUntilFinished / 1000);
             }
