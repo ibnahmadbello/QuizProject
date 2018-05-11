@@ -16,16 +16,23 @@ import static android.R.attr.checked;
 
 public class DisplayQuizActivity extends AppCompatActivity {
 
+    private static final String TIME_REMAINING = "time";
     int totalScore = 0;
     TextView textView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display_quiz);
 
         textView = (TextView) findViewById(R.id.timer);
-        Intent intent = getIntent();
+//        Intent intent = getIntent();
         startTicking();
+
+        if (savedInstanceState != null){
+            String timeRemaining = savedInstanceState.getString(TIME_REMAINING);
+            textView.setText(timeRemaining);
+        }
     }
 
     public void submitQuiz(View view){
@@ -76,5 +83,13 @@ public class DisplayQuizActivity extends AppCompatActivity {
         }.start();
     }
 
+    @Override
+    protected void onSaveInstanceState(Bundle outState){
+        super.onSaveInstanceState(outState);
+
+        String timeRemaining = textView.getText().toString();
+        outState.putString(TIME_REMAINING, timeRemaining);
+
+    }
 
 }
